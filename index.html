@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/styles.css">
+<script src ="js/scripts.js"></script>
+    <title>Pig Dice Game</title>
+  </head>
+  <body>
+    <header class="container">
+      <h1>Pig Dice Game</h1>
+    </header>
+    <div class="container">
+
+
+    <div class="row">
+      <span id="dice"></span>
+    </div>
+    <div class="row">
+      <div class="col-6 jumbotron">
+        <h3>Player 1</h1>
+        <form id="player1" class="" action="index.html" method="post">
+          <div class="col">
+          </div>
+          <div class="col">
+            <button id="player1_roll_btn" type="button" name="button">One more roll</button>
+            <button id="player1_update_btn" type="button" name="button">Update</button>
+          </div>
+        </form>
+        <ol id="player1_history"></ol>
+      </div>
+      <div class="col-6 jumbotron">
+        <h3>Player 2</h1>
+        <form id="player2" class="" action="index.html" method="post">
+          <div class="col">
+            <button id = "player2_roll_btn" type="button" name="button">One more roll</button>
+            <button id="player2_update_btn" type="button" name="button">Update</button>
+          </div>
+        </form>
+        <ol id="player2_history"></ol>
+      </div>
+          </div>
+  </body>
+</html>
