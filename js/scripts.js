@@ -25,6 +25,9 @@ $(document).ready(function() {
       temp1 = player1_result;
     }
     else {
+      if (temp1 + dice_number >= 10) {
+        alert("PLAYER 1 IS THE WINNER!");
+      }
       temp1 = temp1 + dice_number;
       console.log("current  - " + player1_result);
 
@@ -49,7 +52,7 @@ $(document).ready(function() {
 
     dice_number = Math.floor(Math.random() * 6) + 1;
 
-    $("#dice").text("Dice equils to " + dice_number);
+    $("#dice").text("You rolled a " + dice_number);
 
     if(dice_number == 1) {
       $("#player2 *").children().attr("disabled",true);
@@ -58,8 +61,11 @@ $(document).ready(function() {
       temp2 = player2_result;
     }
     else {
-      console.log("sdf");
+      if (temp1 + dice_number >= 10) {
+        alert("PLAYER 2 IS THE WINNER!");
+      }
       temp2 = temp2 + dice_number;
+      console.log("current  - " + player2_result);
     }
     $("#player2_history").append("<li>" + dice_number + " Total: " + temp2 + "</li>");
 
